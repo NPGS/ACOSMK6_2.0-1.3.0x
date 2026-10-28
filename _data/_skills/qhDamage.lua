@@ -1,7 +1,7 @@
 -- ver. 1.3.0   CUSTOM QUICKHACK DAMAGE INCREASE 10 - 30%
 
 local QuickHackDamageIncreaseCustom = {}
-local func = require('./_data/_helpers.lua')
+local func = require('_data/_helpers')
 local prefix = "Items.ACOS_QuickHackDamageIncrease"
 local quality = { "1", "2", "3", "Max" }
 

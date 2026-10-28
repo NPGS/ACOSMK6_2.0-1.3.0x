@@ -1,16 +1,16 @@
 -- ver. 1.3.0   TABLE OF ABILITIES & CYBERWARE ITEMS
 
 return {
-    require('./_data/_skills/berserkCustomAction.lua'),
-    require('./_data/_skills/berserkUltraDeckCustomAction.lua'),
-    require('./_data/_skills/cdRamRecovery.lua'),
-    require('./_data/_skills/qhCostReduction.lua'),
-    require('./_data/_skills/qhCritHit.lua'),
-    require('./_data/_skills/qhDamage.lua'),
-    require('./_data/_skills/qhDotDamage.lua'),
-    require('./_data/_skills/qhRamRestore.lua'),
-    require('./_data/_skills/qhSpread.lua'),
-    require('./_data/_skills/qhUpload.lua'),
-    require('./_data/_skills/sharedSandyActionUltradecks.lua'),
-    require('./_data/cw_Factory.lua'),
+    require('_data/_skills/berserkCustomAction'),
+    require('_data/_skills/berserkUltraDeckCustomAction'),
+    require('_data/_skills/cdRamRecovery'),
+    require('_data/_skills/qhCostReduction'),
+    require('_data/_skills/qhCritHit'),
+    require('_data/_skills/qhDamage'),
+    require('_data/_skills/qhDotDamage'),
+    require('_data/_skills/qhRamRestore'),
+    require('_data/_skills/qhSpread'),
+    require('_data/_skills/qhUpload'),
+    require('_data/_skills/sharedSandyActionUltradecks'),
+    require('_data/cw_Factory'),
 }

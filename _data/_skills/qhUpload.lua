@@ -1,7 +1,7 @@
 -- ver. 1.3.0   CUSTOM QUICKHACK UPLOAD SPEED 15 - 45% FASTER
 
 local QuickHackUploadSpeedCustom = {}
-local func = require('./_data/_helpers.lua')
+local func = require('_data/_helpers')
 local prefix = "Items.ACOS_QuickHackUploadSpeed"
 local quality = { "1", "2", "3", "Max" }
 

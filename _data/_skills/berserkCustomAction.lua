@@ -1,7 +1,7 @@
 -- ver. 1.3.0   BERSERK CUSTOM ACTION GENERATOR
 
 local bCA = {}
-local func = require('./_data/_helpers.lua')
+local func = require('_data/_helpers')
 local prefix = 'CyberwareAction.ACOS_UseBerserk'
 local quality = { 'Base', 'Plus', 'PlusPlus', 'Ultimate' }
 

@@ -1,7 +1,7 @@
 -- ver. 1.3.0   CUSTOM QUICKHACK TAKEDOWN RAM RESTORE 1.28 - 2.56 UNITS
 
 local QuickHackRamRestore = {}
-local func = require('./_data/_helpers.lua')
+local func = require('_data/_helpers')
 local prefix = "Items.ACOS_QuickHackRamRestore"
 local quality = { "1", "2", "3", "Max" }
 

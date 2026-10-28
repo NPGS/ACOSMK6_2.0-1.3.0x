@@ -1,7 +1,7 @@
 -- ver. 1.3.0   CUSTOM CYBERDECK RAM RECOVERY 0.08 - 0.24 UNITS
 
 local cdRamRecoveryAbility = {}
-local func = require('./_data/_helpers.lua')
+local func = require('_data/_helpers')
 local prefix = "Items.ACOS_CyberdeckRamRecoveryAbility"
 local quality = { "1", "2", "3", "Max" }
 

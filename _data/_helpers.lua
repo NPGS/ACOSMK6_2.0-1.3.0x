@@ -129,7 +129,7 @@ end
 
 function ACOSMK6.createItemForVendors(itemRecord, genPrereqs)
     local vendorItem = 'Vendors.'..itemRecord
-    local vendorList = require('./_data/_ripperDocList.lua')
+    local vendorList = require('_data/_ripperDocList')
     if TweakDB:GetRecord(vendorItem) == nil then
         TweakDB:CreateRecord(vendorItem, "gamedataVendorItem_Record")
         TweakDB:SetFlat(vendorItem..".generationPrereqs", genPrereqs)

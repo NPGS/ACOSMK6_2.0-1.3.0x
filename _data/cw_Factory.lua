@@ -1,10 +1,10 @@
 -- ver. 1.3.0   AUTOMATIZED CYBERWARE FACTORY
 
 local cw_Factory = {}
-local cfg = require('./_data/_cfg.lua')
-local func = require('./_data/_helpers.lua')
-local utils = require('./_data/_utils.lua')
-local cw_Data = require('./_data/cw_Data.lua')
+local cfg = require('_data/_cfg')
+local func = require('_data/_helpers')
+local utils = require('_data/_utils')
+local cw_Data = require('_data/cw_Data')
 
 ------------------------------------------- AUTOMATIZED CYBERWARE FACTORY -------------------------------------------
 function cw_Factory.make()

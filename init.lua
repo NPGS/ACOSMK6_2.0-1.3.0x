@@ -1,9 +1,10 @@
--- ver. 1.3.0e   ARASAKA CYBERWARE OS MK.6 2.0 - Cyberpunk 2077 2.31a
+-- ver. 1.3.0e   ARASAKA CYBERWARE OS MK.6 2.0 - Cyberpunk 2077 2.5
 
-local ACOSMK6 = require('./_data/_helpers.lua')
-local tableToSend = require('./_data/_makeList.lua')
+local ACOSMK6 = require('_data/_helpers')
+local tableToSend = require('_data/_makeList')
+local bTL = require('./_data/_skills/berserkTimeLimiter.lua')
 local modInfo = 'ACOSMK6 2.0 ver. 1.3.0e'
 
-registerForEvent('onInit', function()
-    ACOSMK6.startACOSMK6(tableToSend, modInfo)
-end)
+registerForEvent('onInit', function() ACOSMK6.startACOSMK6(tableToSend, modInfo) end)
+
+registerForEvent('onUpdate', function(dt) bTL.onUpdate(dt) end)

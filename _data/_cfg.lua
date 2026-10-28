@@ -1,7 +1,7 @@
 -- ver. 1.3.0   LIST OF EFFECTS / VALUES
 
 local cfg = {}
-local func = require('./_data/_helpers.lua')
+local func = require('_data/_helpers')
 
 ---------------------------------- ICONS NAME / PATH ----------------------------------
 cfg.iconPath = 'mod\\gameplay\\gui\\common\\icons\\arasaka_cyberware_icons.inkatlas'

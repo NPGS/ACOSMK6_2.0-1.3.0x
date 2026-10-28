@@ -1,7 +1,7 @@
 -- ver. 1.3.0   CUSTOM QUICKHACK SPREAD CHANCE 15% - 100%
 
 local QuickHackSpreadChance = {}
-local func = require('./_data/_helpers.lua')
+local func = require('_data/_helpers')
 local prefix = 'Items.ACOS_QuickHackSpreadChance'
 local quality = { '1', '2', '3', '4', '5', '6', 'Max' }
 

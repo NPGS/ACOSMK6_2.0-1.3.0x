@@ -1,7 +1,7 @@
 -- ver. 1.3.0   CUSTOM QUICKHACK CRITICAL HIT 14 - 42%
 
 local QuickHackCriticalHit = {}
-local func = require('./_data/_helpers.lua')
+local func = require('_data/_helpers')
 local prefix = "Items.ACOS_QuickHackCriticalHit"
 local quality = { "1", "2", "3", "Max" }
 

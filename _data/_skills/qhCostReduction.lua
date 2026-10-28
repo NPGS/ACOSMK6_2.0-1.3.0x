@@ -1,7 +1,7 @@
 -- ver. 1.3.0   CUSTOM QUICKHACK COST REDUCTION     1 / 4 UNITS
 
 local QuickHackCostReductionCustom = {}
-local func = require('./_data/_helpers.lua')
+local func = require('_data/_helpers')
 local prefix = "Items.ACOS_QuickHackCostReduction"
 local quality = { "1", "2", "3", "Max" }
 

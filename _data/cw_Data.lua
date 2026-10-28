@@ -1,6 +1,6 @@
 -- ver. 1.3.0   CYBERWARE DATA
 
-local cfg = require('./_data/_cfg.lua')
+local cfg = require('_data/_cfg')
 
 return {
     ---------------------------------------- <<<<<< START >>>>>> ----------------------------------------
@@ -24,7 +24,7 @@ return {
                 {'_logic0_0', 'logic0', {20.0, 10.0, 14.0, 10.0, 10.0, 7.0, 14.0, 9.0, 6.0}, {}, 'NewArasakaBerserkMK6-Logic-BigDesc', {}},
                 {'_logic1_0', 'logic1', {}, {}, 'NewUnlimitedBerserkSlam-Desc', {}},
                 {'_logic2_0', 'logic2', {3.0, 7.0}, {}, 'NewArasakaBerserkMK6-Logic-RestoreDesc', {}},
-                {'_logic3_0', 'logic3', {30.0, 0.334, 60.0}, {}, 'NewDurationCooldownBerserkMK6-Separate-Desc', {}},
+                {'_logic3_0', 'logic3', {30.0, 0.334, 60.0, 60.0}, {}, 'NewDurationExtensionCooldownBerserkMK6-Separate-Desc', {}},
             },
             attunements = {
                 {'_logic4_0', 'logic4', {1.0}, 'UIIcon.Reflexes', 'LocKey#96059', 'LocKey#94152', 'ArasakaBerserkBuff', 'Self', 'BaseStats.Reflexes', 'BaseStats.CritChance', 1.0},
@@ -60,7 +60,7 @@ return {
                 {'_logic0_0', 'logic0', {30.0, 15.0, 20.0, 15.0, 15.0, 10.0, 20.0, 14.0, 9.0}, {}, 'NewArasakaBerserkMK6-Logic-BigDesc', {}},
                 {'_logic1_0', 'logic1', {}, {}, 'NewUnlimitedBerserkSlam-Desc', {}},
                 {'_logic2_0', 'logic2', {3.0, 7.0}, {}, 'NewArasakaBerserkMK6-Logic-RestoreDesc', {}},
-                {'_logic3_0', 'logic3', {30.0, 0.334, 60.0}, {}, 'NewDurationCooldownBerserkMK6-Separate-Desc', {}},
+                {'_logic3_0', 'logic3', {30.0, 0.334, 60.0, 60.0}, {}, 'NewDurationExtensionCooldownBerserkMK6-Separate-Desc', {}},
             },
             attunements = {
                 {'_logic4_0', 'logic4', {1.0}, 'UIIcon.Reflexes', 'LocKey#96059', 'LocKey#94152', 'ArasakaBerserkBuff', 'Self', 'BaseStats.Reflexes', 'BaseStats.CritChance', 1.0},
@@ -95,7 +95,7 @@ return {
                 {'_logic0_0', 'logic0', {40.0, 20.0, 28.0, 20.0, 20.0, 14.0, 28.0, 20.0, 12.0}, {}, 'NewArasakaBerserkMK6-Logic-BigDesc', {}},
                 {'_logic1_0', 'logic1', {}, {}, 'NewUnlimitedBerserkSlam-Desc', {}},
                 {'_logic2_0', 'logic2', {3.0, 7.0}, {}, 'NewArasakaBerserkMK6-Logic-RestoreDesc', {}},
-                {'_logic3_0', 'logic3', {30.0, 0.334, 60.0}, {}, 'NewDurationCooldownBerserkMK6-Separate-Desc', {}},
+                {'_logic3_0', 'logic3', {30.0, 0.334, 60.0, 60.0}, {}, 'NewDurationExtensionCooldownBerserkMK6-Separate-Desc', {}},
             },
             attunements = {
                 {'_logic4_0', 'logic4', {1.0}, 'UIIcon.Reflexes', 'LocKey#96059', 'LocKey#94152', 'ArasakaBerserkBuff', 'Self', 'BaseStats.Reflexes', 'BaseStats.CritChance', 1.0},
@@ -131,7 +131,7 @@ return {
                 {'_logic0_0', 'logic0', {60.0, 30.0, 42.0, 30.0, 30.0, 20.0, 42.0, 28.0, 18.0}, {}, 'NewArasakaBerserkMK6-Logic-BigDesc', {}},
                 {'_logic1_0', 'logic1', {}, {}, 'NewUnlimitedBerserkSlam-Desc', {}},
                 {'_logic2_0', 'logic2', {3.0, 7.0}, {}, 'NewArasakaBerserkMK6-Logic-RestoreDesc', {}},
-                {'_logic3_0', 'logic3', {30.0, 0.334, 60.0}, {}, 'NewDurationCooldownBerserkMK6-Separate-Desc', {}},
+                {'_logic3_0', 'logic3', {30.0, 0.334, 60.0, 60.0}, {}, 'NewDurationExtensionCooldownBerserkMK6-Separate-Desc', {}},
             },
             attunements = {
                 {'_logic4_0', 'logic4', {1.0}, 'UIIcon.Reflexes', 'LocKey#96059', 'LocKey#94152', 'ArasakaBerserkBuff', 'Self', 'BaseStats.Reflexes', 'BaseStats.CritChance', 1.0},

@@ -1,7 +1,7 @@
 -- ver. 1.3.0   BERSERK ULTRADECK CUSTOM ACTION GENERATOR
 
 local bUDCA = {}
-local func = require('./_data/_helpers.lua')
+local func = require('_data/_helpers')
 local prefix = 'CyberwareAction.ACOS_UseUltraDeckBerserk'
 local quality = { 'Base', 'Plus', 'PlusPlus', 'Ultimate' }
 

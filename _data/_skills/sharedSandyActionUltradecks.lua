@@ -1,7 +1,7 @@
 -- ver. 1.3.0   SHARED SANDEVISTAN ULTRADECKS ACTION GENERATOR
 
 local sSAU = {}
-local func = require('./_data/_helpers.lua')
+local func = require('_data/_helpers')
 local actionRecord = "CyberwareAction.ACOS_UseUltraDeckSandevistan"
 local recs = func.genRecords(actionRecord, 'inline', 9)
 

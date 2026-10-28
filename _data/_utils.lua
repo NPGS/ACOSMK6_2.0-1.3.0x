@@ -1,8 +1,8 @@
 -- ver. 1.3.0   LOGIC HELPERS UTILITIES FOR STANDARD OPERATIONS
 
 local utils = {}
-local cfg = require('./_data/_cfg.lua')
-local func = require('./_data/_helpers.lua')
+local cfg = require('_data/_cfg')
+local func = require('_data/_helpers')
 
 function utils.createLogicDesc(itemRecord, group, floatV, intV, desc, statsV)
     local logic = func.genRecords(itemRecord, group, 2)     -- RECORDS
@@ -28,7 +28,7 @@ function utils.assignBerserkStats(stats, type, attStat, values, iconic)
     func.createConstantStat(stats[1], 'Additive', 'BaseStats.BerserkCooldownBase', values[1])
     func.createConstantStat(stats[2], 'Additive', 'BaseStats.BerserkChargesDecayRate', values[2])
     func.createConstantStat(stats[3], 'Additive', 'BaseStats.BerserkChargesRegenRate', values[3])
-    if type == 'Berserk' then
+    if (type == 'Berserk') then
         func.createCombinedStat(stats[4], 'Additive', '*', 'Player', attStat, 'BaseStats.AttunementHelper', values[4])
     end
     func.createIconicRecord(stats[(#stats -1)], iconic)
@@ -42,9 +42,9 @@ function utils.assignSandyStats(stats, type, attStat, values, iconic)
     func.createConstantStat(stats[4], 'Additive', 'BaseStats.TimeDilationSandevistanCooldownBase', values[4])
     func.createConstantStat(stats[5], 'Additive', 'BaseStats.SandevistanKillRechargeValue', values[5])
     func.createConstantStat(stats[6], 'Additive', 'BaseStats.TimeDilationSandevistanEnterCost', 0.0)
-    if type[1] == 'Sandevistan' then
+    if (type[1] == 'Sandevistan') then
         func.createCombinedStat(stats[7], 'Additive', '*', 'Player', attStat, 'BaseStats.AttunementHelper', values[6])
-        if type[2] == 'Spectre' then
+        if (type[2] == 'Spectre') then
             func.createConstantStat(stats[8], 'Multiplier', 'BaseStats.Health', values[7])
             func.createConstantStat(stats[9], 'Multiplier', 'BaseStats.MitigationChance', values[7])
             func.createConstantStat(stats[10], 'Multiplier', 'BaseStats.MitigationStrength', values[7])
@@ -62,7 +62,7 @@ function utils.createSandyActiveEffect(itemRecord, group, stats, modifiers, valu
     local tableOfStats2 = {}
     if not func.existsCheck({logic[0]}) then
         for i, stat in ipairs(stats) do
-            if stat ~= 'AttackSpeed' then
+            if (stat ~= 'AttackSpeed') then
                 table.insert(tableOfStats1, func.createConstantStat(statsRecords[i], modifiers[i], 'BaseStats.'..stat, values[i]))
             else
                 table.insert(tableOfStats2, func.createConstantStat(statsRecords[i], modifiers[i], 'BaseStats.'..stat, values[i]))
@@ -73,7 +73,7 @@ function utils.createSandyActiveEffect(itemRecord, group, stats, modifiers, valu
             func.applyStatGroupEffectors(logic[1], 'None', 'ApplyStatGroupEffector', logic[2], false, false, true, logic[3], {})
                 func.createIPrereq(logic[2], 'TimeDilationPSMPrereq', true, false, 'Sandevistan')
                 func.createStatModGrp(logic[3], false, false, {}, false, tableOfStats1, -1, '')
-            if hasAtkSpd then
+            if (hasAtkSpd) then
                 ---------- INNER EFFECT 2 ----------
                 func.applyStatGroupEffectors(logic[4], 'Weapon', 'ApplyStatGroupEffector', logic[5], false, false, true, logic[6], {})
                     func.createMultiPrereq(logic[5], 'AND', {logic[2], 'Prereqs.MeleeWeaponHeldPrereq'}, 'gameMultiPrereq')
@@ -134,7 +134,7 @@ function utils.setItemRecipe(itemRecord, tags, prevItem, values, itemName, iconN
         { recipe[3], values[1], 'Items.LegendaryMaterial1' }
     }
     local craftingRecipe = { recipe[2], recipe[3] }
-    if isSpectreRetail then
+    if (isSpectreRetail) then
         local uniqueRecipeElements = {
             { recipe[4], 1, 'Items.SpectreProtoUpgradeKit', 'SpectreUpgradeKit-Name', cfg.spectreUpgradeKitIcon },
             { recipe[5], 1, 'Items.SpectreProtoLimitRemover', 'SpectreLimitRemover-Name', cfg.spectreLimitRemoverIcon },
@@ -169,7 +169,7 @@ function utils.setItemToVendorsInventory(itemRecord, quality)
 end
 
 function utils.checkCustomString(str)
-    if not str or (str == '') then return GetLocalizedText('CUSTOM DESCRIPTION NEEDED...') end
+    if not (str) or (str == '') then return GetLocalizedText('CUSTOM DESCRIPTION NEEDED...') end
     if str:find('LocKey#', 1, true) then
         return str
     else
