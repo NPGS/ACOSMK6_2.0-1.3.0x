@@ -13,6 +13,7 @@ cfg.redLineIcon = 'kangtao_sandevistan_ultradeck_icon_01'
 cfg.spectreChronoLatticeIcon = 'spectre_chrono_lattice_icon_01'
 cfg.spectreLimitRemoverIcon = 'spectre_limit_remover_icon_01'
 cfg.spectreProtoIcon = 'spectre_proto_icon_01'
+cfg.spectreProtoMidIcon = 'spectre_proto_mid_icon_01'
 cfg.spectreProtoFinalIcon = 'spectre_proto_final_icon_01'
 cfg.spectreRetailIcon = 'spectre_retail_icon_01'
 cfg.spectreUpgradeKitIcon = 'spectre_upgrade_kit_icon_01'
@@ -20,6 +21,12 @@ cfg.viperIcon = 'militech_cyberdeck_icon_01'
 cfg.zeroPointIcon = 'arasaka_sandevistan_ultradeck_icon_01'
 
 ---------------------------------- CYBERDECK ABILITIES ----------------------------------
+-- CYBERDECK OVERCLOCK BUFF
+cfg.cbOverclockBuff1 = 'Items.ACOS_CyberdeckOverclockBuff1'
+cfg.cbOverclockBuff2 = 'Items.ACOS_CyberdeckOverclockBuff2'
+cfg.cbOverclockBuff3 = 'Items.ACOS_CyberdeckOverclockBuff3'
+cfg.cbOverclockBuffMax = 'Items.ACOS_CyberdeckOverclockBuffMax'
+
 -- CYBERDECK RAM RECOVERY
 cfg.cbRamRecovery1 = 'Items.ACOS_CyberdeckRamRecoveryAbility1'
 cfg.cbRamRecovery2 = 'Items.ACOS_CyberdeckRamRecoveryAbility2'

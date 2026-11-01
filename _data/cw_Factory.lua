@@ -97,7 +97,7 @@ function cw_Factory.make()
                     utils.setItemToVendorsInventory(obj.itemID, obj.quality)
                 end
                 table.insert(tableCheck, obj.itemID)
-                print(i..' => '..obj.itemID)
+            --  print(i..' => '..obj.itemID)
             end
         end
     end

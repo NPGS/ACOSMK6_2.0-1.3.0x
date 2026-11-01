@@ -2,7 +2,7 @@
 
 local ACOSMK6 = require('_data/_helpers')
 local DATA = require('_data/_makeList')
-local bTL = require('./_data/_skills/berserkTimeLimiter.lua')
+local bTL = require('./_data/_skills/berserkTimeLimiter')
 local modInfo = 'ACOSMK6 2.0 ver. 1.3.0e'
 
 registerForEvent('onInit', function() ACOSMK6.startACOSMK6(DATA, modInfo) end)

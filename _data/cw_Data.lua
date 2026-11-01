@@ -171,7 +171,7 @@ return {
                 cfg.qhUploadSpeed1,                                     -- QUICKHACKS UPLOAD SPEED 15%
                 cfg.qhCostReduction1,                                   -- QUICKHACKS RAM COST REDUCTION (1 UNIT(S))
                 cfg.qhSpreadChance5,                                    -- QUICKHACKS SPREAD CHANCE 100% (1 TARGET(S))
-                'Items.OverclockedRefreshDotHacksDurationAbility',
+                cfg.cbOverclockBuff1,                                   -- CYBERDECK OVERCLOCK BUFF (+22% DURATION / -22% COOLDOWN)
             },
         },
         deckSide = { '_deckSide_0', 'deckSide', {8.0, 3.0} },
@@ -206,7 +206,7 @@ return {
                 cfg.qhUploadSpeed2,                                     -- QUICKHACKS UPLOAD SPEED 20%
                 cfg.qhCostReduction2,                                   -- QUICKHACKS RAM COST REDUCTION (2 UNIT(S))
                 cfg.qhSpreadChance5,                                    -- QUICKHACKS SPREAD CHANCE 100% (1 TARGET(S))
-                'Items.OverclockedRefreshDotHacksDurationAbility',
+                cfg.cbOverclockBuff2,                                   -- CYBERDECK OVERCLOCK BUFF (+28% DURATION / -28% COOLDOWN)
             },
         },
         deckSide = { '_deckSide_0', 'deckSide', {12.0, 4.0} },
@@ -240,7 +240,7 @@ return {
                 cfg.qhUploadSpeed3,                                     -- QUICKHACKS UPLOAD SPEED 30%
                 cfg.qhCostReduction3,                                   -- QUICKHACKS RAM COST REDUCTION (3 UNIT(S))
                 cfg.qhSpreadChance6,                                    -- QUICKHACKS SPREAD CHANCE 100% (2 TARGET(S))
-                'Items.OverclockedRefreshDotHacksDurationAbility',
+                cfg.cbOverclockBuff3,                                   -- CYBERDECK OVERCLOCK BUFF (+33% DURATION / -33% COOLDOWN)
             },
         },
         deckSide = { '_deckSide_0', 'deckSide', {16.0, 5.0} },
@@ -275,7 +275,7 @@ return {
                 cfg.qhUploadSpeedMax,                                   -- QUICKHACKS UPLOAD SPEED 45%
                 cfg.qhCostReductionMax,                                 -- QUICKHACKS RAM COST REDUCTION (4 UNIT(S))
                 cfg.qhSpreadChanceMax,                                  -- QUICKHACKS SPREAD CHANCE 100% (3 TARGET(S))
-                'Items.OverclockedRefreshDotHacksDurationAbility',
+                cfg.cbOverclockBuffMax,                                 -- CYBERDECK OVERCLOCK BUFF (+50% DURATION / -50% COOLDOWN)
             },
         },
         deckSide = { '_deckSide_0', 'deckSide', {24.0, 8.0} },
@@ -446,15 +446,15 @@ return {
         quality = 'Legendary',
         upgradeMul = 2.5,
         humanity = { 'Variants.Humanity60Cost' },
-        effectStats = { 'CritChance', 'CritDamage', 'AttackSpeed' },
-        modifiers = { 'Additive', 'Additive', 'AdditiveMultiplier' },
+        effectStats = { 'CritChance', 'CritDamage', 'Visibility', 'AttackSpeed' },
+        modifiers = { 'Additive', 'Additive', 'Multiplier', 'AdditiveMultiplier' },
         toEquip = {
             uiRecs = {
                 {'_logic0_0', 'logic0', {90.0, 10.0, 10.0, 10.0, 20.0, 15.0, 10.0, 10.0}, {30}, 'NewArasakaSandevistanMk6-Retail-Logic-BigDesc', {}},
                 {'_logic1_0', 'logic1', {8.0, 30.0}, {}, 'NewDurationCooldown-Separate-Desc', {}},
             },
             effects = {
-                active = {'_logic2_0', 'logic2', {10.0, 20.0, 0.15}},
+                active = {'_logic2_0', 'logic2', {10.0, 20.0, 0.4, 0.15}},
                 recover = {'_logic3_0', 'logic3', {'Health'}, {10.0}},
                 flatDMG = {'_logic4_0', 'logic4', 1.1},
             },
@@ -486,15 +486,15 @@ return {
         quality = 'LegendaryPlus',
         upgradeMul = 2.5,
         humanity = { 'Variants.Humanity60Cost' },
-        effectStats = { 'CritChance', 'CritDamage', 'AttackSpeed' },
-        modifiers = { 'Additive', 'Additive', 'AdditiveMultiplier' },
+        effectStats = { 'CritChance', 'CritDamage', 'Visibility', 'AttackSpeed' },
+        modifiers = { 'Additive', 'Additive', 'Multiplier', 'AdditiveMultiplier' },
         toEquip = {
             uiRecs = {
                 {'_logic0_0', 'logic0', {90.0, 10.0, 15.0, 15.0, 30.0, 20.0, 10.0, 10.0}, {30}, 'NewArasakaSandevistanMk6-Retail-Logic-BigDesc', {}},
                 {'_logic1_0', 'logic1', {8.0, 30.0}, {}, 'NewDurationCooldown-Separate-Desc', {}},
             },
             effects = {
-                active = {'_logic2_0', 'logic2', {15.0, 30.0, 0.2}},
+                active = {'_logic2_0', 'logic2', {15.0, 30.0, 0.4, 0.2}},
                 recover = {'_logic3_0', 'logic3', {'Health'}, {10.0}},
                 flatDMG = {'_logic4_0', 'logic4', 1.15},
             },
@@ -525,15 +525,15 @@ return {
         quality = 'LegendaryPlusPlus',
         upgradeMul = 2.5,
         humanity = { 'Variants.Humanity60Cost' },
-        effectStats = { 'CritChance', 'CritDamage', 'AttackSpeed' },
-        modifiers = { 'Additive', 'Additive', 'AdditiveMultiplier' },
+        effectStats = { 'CritChance', 'CritDamage', 'Visibility', 'AttackSpeed' },
+        modifiers = { 'Additive', 'Additive', 'Multiplier', 'AdditiveMultiplier' },
         toEquip = {
             uiRecs = {
                 {'_logic0_0', 'logic0', {90.0, 10.0, 20.0, 20.0, 40.0, 30.0, 10.0, 10.0}, {30}, 'NewArasakaSandevistanMk6-Retail-Logic-BigDesc', {}},
                 {'_logic1_0', 'logic1', {8.0, 30.0}, {}, 'NewDurationCooldown-Separate-Desc', {}},
             },
             effects = {
-                active = {'_logic2_0', 'logic2', {20.0, 40.0, 0.3}},
+                active = {'_logic2_0', 'logic2', {20.0, 40.0, 0.4, 0.3}},
                 recover = {'_logic3_0', 'logic3', {'Health'}, {10.0}},
                 flatDMG = {'_logic4_0', 'logic4', 1.2},
             },
@@ -566,15 +566,15 @@ return {
         quality = 'Legendary',
         upgradeMul = 2.5,
         humanity = { 'Variants.Humanity60Cost' },
-        effectStats = { 'Health', 'MitigationChance', 'MitigationStrength', 'CritChance', 'CritDamage', 'AttackSpeed' },
-        modifiers = { 'AdditiveMultiplier', 'Multiplier', 'Multiplier', 'Additive', 'Additive', 'AdditiveMultiplier' },
+        effectStats = { 'Health', 'MitigationChance', 'MitigationStrength', 'CritChance', 'CritDamage', 'Visibility', 'AttackSpeed' },
+        modifiers = { 'AdditiveMultiplier', 'Multiplier', 'Multiplier', 'Additive', 'Additive', 'Multiplier', 'AdditiveMultiplier' },
         toEquip = {
             uiRecs = {
                 {'_logic0_0', 'logic0', {93.0, 15.0, 30.0, 30.0, 60.0, 45.0, 15.0, 15.0, 22.0}, {30, 45, 60}, 'NewArasakaSandevistanMk6-Logic-BigDesc', {}},
                 {'_logic1_0', 'logic1', {6.0, 45.0}, {}, 'NewDurationCooldown-Separate-Desc', {}},
             },
             effects = {
-                active = {'_logic2_0', 'logic2', {-0.45, 0.4, 0.4, 30.0, 60.0, 0.45}},
+                active = {'_logic2_0', 'logic2', {-0.45, 0.4, 0.4, 30.0, 60.0, 0.3, 0.45}},
                 recover = {'_logic3_0', 'logic3', {'Health', 'Stamina'}, {15.0, 22.0}},
                 flatDMG = {'_logic4_0', 'logic4', 1.3},
             },
@@ -607,15 +607,15 @@ return {
         quality = 'LegendaryPlus',
         upgradeMul = 2.5,
         humanity = { 'Variants.Humanity60Cost' },
-        effectStats = { 'Health', 'MitigationChance', 'MitigationStrength', 'CritChance', 'CritDamage', 'AttackSpeed' },
-        modifiers = { 'AdditiveMultiplier', 'Multiplier', 'Multiplier', 'Additive', 'Additive', 'AdditiveMultiplier' },
+        effectStats = { 'Health', 'MitigationChance', 'MitigationStrength', 'CritChance', 'CritDamage', 'Visibility', 'AttackSpeed' },
+        modifiers = { 'AdditiveMultiplier', 'Multiplier', 'Multiplier', 'Additive', 'Additive', 'Multiplier', 'AdditiveMultiplier' },
         toEquip = {
             uiRecs = {
                 {'_logic0_0', 'logic0', {95.0, 20.0, 30.0, 30.0, 60.0, 45.0, 15.0, 15.0, 22.0}, {30, 60, 80}, 'NewArasakaSandevistanMk6-Logic-BigDesc', {}},
                 {'_logic1_0', 'logic1', {6.0, 45.0}, {}, 'NewDurationCooldown-Separate-Desc', {}},
             },
             effects = {
-                active = {'_logic2_0', 'logic2', {-0.6, 0.2, 0.2, 30.0, 60.0, 0.45}},
+                active = {'_logic2_0', 'logic2', {-0.6, 0.2, 0.2, 30.0, 60.0, 0.2, 0.45}},
                 recover = {'_logic3_0', 'logic3', {'Health', 'Stamina'}, {15.0, 22.0}},
                 flatDMG = {'_logic4_0', 'logic4', 1.3},
             },
@@ -625,7 +625,7 @@ return {
         },
         stats = { {'Sandevistan', 'Spectre'}, 'BaseStats.Cool', {6.0, 0.05, 45.0, 1.0, 15.0, 1.0, 0.7}, true },
         buyPrice = cfg.sandyBuyPrice,
-        iconName = cfg.spectreProtoIcon,
+        iconName = cfg.spectreProtoMidIcon,
         iconPath = cfg.iconPath,
         objActions = cfg.sandyActions,
         sellPrice = cfg.sandySellPrice,
@@ -646,23 +646,23 @@ return {
         quality = 'LegendaryPlusPlus',
         upgradeMul = 2.5,
         humanity = { 'Variants.Humanity60Cost' },
-        effectStats = { 'Health', 'MitigationChance', 'MitigationStrength', 'CritChance', 'CritDamage', 'AttackSpeed' },
-        modifiers = { 'AdditiveMultiplier', 'Multiplier', 'Multiplier', 'Additive', 'Additive', 'AdditiveMultiplier' },
+        effectStats = { 'Health', 'MitigationChance', 'MitigationStrength', 'CritChance', 'CritDamage', 'Visibility', 'AttackSpeed' },
+        modifiers = { 'AdditiveMultiplier', 'Multiplier', 'Multiplier', 'Additive', 'Additive', 'Multiplier', 'AdditiveMultiplier' },
         toEquip = {
             uiRecs = {
-                {'_logic0_0', 'logic0', {96.0, 25.0, 30.0, 30.0, 60.0, 45.0, 15.0, 15.0, 22.0}, {30, 80}, 'NewArasakaSandevistanMk6-Ultimate-Logic-BigDesc', {}},
+                {'_logic0_0', 'logic0', {96.0, 25.0, 30.0, 30.0, 60.0, 45.0, 22.0, 22.0, 28.0}, {30, 80}, 'NewArasakaSandevistanMk6-Ultimate-Logic-BigDesc', {}},
                 {'_logic1_0', 'logic1', {6.0, 45.0}, {}, 'NewDurationCooldown-Separate-Desc', {}},
             },
             effects = {
-                active = {'_logic2_0', 'logic2', {-0.8, 0.0, 0.0, 30.0, 60.0, 0.45}},
-                recover = {'_logic3_0', 'logic3', {'Health', 'Stamina'}, {15.0, 22.0}},
+                active = {'_logic2_0', 'logic2', {-0.8, 0.0, 0.0, 30.0, 60.0, 0.1, 0.45}},
+                recover = {'_logic3_0', 'logic3', {'Health', 'Stamina'}, {22.0, 28.0}},
                 flatDMG = {'_logic4_0', 'logic4', 1.3},
             },
             attunements = {
                 {'_logic5_0', 'logic5', {1.0}, 'UIIcon.Cool', 'CoolCritDamageCyberwareBonus-Desc', 'LocKey#94150', 'SandevistanPlayerBuff', 'Self', 'BaseStats.Cool', 'BaseStats.CritDamage', 1.0},
             },
         },
-        stats = { {'Sandevistan', 'Spectre'}, 'BaseStats.Cool', {6.0, 0.04, 45.0, 1.0, 15.0, 1.0, 0.7}, true },
+        stats = { {'Sandevistan', 'Spectre'}, 'BaseStats.Cool', {6.0, 0.04, 45.0, 1.0, 22.0, 1.0, 0.7}, true },
         buyPrice = cfg.sandyBuyPrice,
         iconName = cfg.spectreProtoFinalIcon,
         iconPath = cfg.iconPath,
